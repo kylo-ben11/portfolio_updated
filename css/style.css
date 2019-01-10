@@ -15,11 +15,11 @@ body {
   font-size: 1.6rem;
   font-family: "PT Sans", sans-serif;
   color: #242322;
-  background-color: blue;
-  /* background-image: url(../img/home-background-colored.jpg);
+  /* background-color: blue; */
+  background-image: url(../img/home-background-colored.jpg);
   background-size:cover;
   background-repeat:no-repeat;
-  background-position: top; */
+  background-position: top;
 }
 
 a {

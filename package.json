@@ -1,0 +1,25 @@
+{
+  "name": "updated-portfolio",
+  "version": "1.0.0",
+  "description": "an overhaul to my portfolio site",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kylo-ben11/portfolio_updated.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Ben Knier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kylo-ben11/portfolio_updated/issues"
+  },
+  "homepage": "https://github.com/kylo-ben11/portfolio_updated#readme",
+  "dependencies": {
+    "swup": "^1.7.18"
+  }
+}

@@ -6,6 +6,10 @@ Primary style
 *, *::after, *::before {
   box-sizing: border-box;
 }
+@font-face {
+  font-family: bohemian;
+  src: url(../fonts/bohemian.otf);
+}
 
 html {
   font-size: 62.5%;
@@ -20,6 +24,10 @@ body {
   background-size:cover;
   background-repeat:no-repeat;
   background-position: top;
+}
+.page_portfolio {
+  background: rgb(150,62,64);
+  background: radial-gradient(circle, rgba(150,62,64,1) 0%, rgba(51,1,54,1) 50%);
 }
 
 a {
@@ -74,6 +82,30 @@ Typography
   margin-bottom: 1em;
   margin-top: 1em;
   font-family: roboto condensed, sans-serif;
+}
+.portfolio_h1 {
+  color: #fff;
+}
+.project-title h2 {
+  font-family: bohemian!important;
+}
+.portfolio_link {
+  text-align:center;
+  padding: 12px;
+  border-radius:10px;
+  background-color:#ff5e35;
+  color:#fff;
+}
+.portfolio_link:hover {
+  transform:scale(1.1);
+  transition:.25s;
+  box-shadow:5px 5px 10px #5e1742;
+}
+.goshineon1 {
+  margin-bottom:5px!important;
+}
+.goshineon {
+  margin-top:0!important;
 }
 /*@media only screen and (min-width: 768px) {
   h1 {
@@ -367,6 +399,9 @@ Transition Layer
 .primary-nav a {
   font-size:36px;
   margin-bottom:5%;
+  font-family: roboto condensed;
+  letter-spacing: 4px;
+  color: #5e1742;
 }
 .navbar {
   border-bottom: 1px solid #330136;
@@ -375,6 +410,9 @@ Transition Layer
   justify-content: space-between;
   align-items: center;
   padding: 0 0 0 20px;
+}
+.navbar_portfolio {
+  border-bottom: 1px solid #ff5e35;
 }
 .headlines {
   display:flex;
@@ -404,6 +442,20 @@ Transition Layer
   line-height:20px;
 }
 
+.portfolio_button{
+  margin-top:18%;
+}
+.portfolio_button a {
+  background-color:#fff;
+  padding: 12px 22px;
+  border-radius:10px;
+  font-size:24px;
+  letter-spacing:4px;
+}
+.portfolio_button:hover{
+  opacity:0.8;
+  transition: .25s;
+}
 /*SWUP Transitions*/
 .transition-fade {
   transition: .4s;
@@ -413,4 +465,182 @@ html.is-animating .transition-fade {
   opacity:0;
   transform:translateX(-100);
   /* transform: translateY(-100px); */
+}
+
+/*Portfolio Tiles*/
+.portfolio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+.portfolio .credit {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #000;
+}
+.portfolio .options {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  overflow: hidden;
+  min-width: 600px;
+  max-width: 900px;
+  width: calc(100% - 100px);
+  height: 400px;
+}
+@media screen and (max-width: 718px) {
+  .portfolio .options {
+    min-width: 520px;
+  }
+  .portfolio .options .option:nth-child(5) {
+    display: none;
+  }
+}
+@media screen and (max-width: 638px) {
+  .portfolio .options {
+    min-width: 440px;
+  }
+  .portfolio .options .option:nth-child(4) {
+    display: none;
+  }
+}
+@media screen and (max-width: 558px) {
+  .portfolio .options {
+    min-width: 360px;
+  }
+  .portfolio .options .option:nth-child(3) {
+    display: none;
+  }
+}
+@media screen and (max-width: 478px) {
+  .portfolio .options {
+    min-width: 280px;
+  }
+  .portfolio .options .option:nth-child(2) {
+    display: none;
+  }
+}
+.portfolio .options .option {
+  position: relative;
+  overflow: hidden;
+  min-width: 60px;
+  margin: 10px;
+  background: var(--optionBackground, var(--defaultBackground, #E6E9ED));
+  background-size: auto 120%;
+  background-position: center;
+  cursor: pointer;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+.portfolio .options .option:nth-child(1) {
+  --defaultBackground:#ED5565;
+}
+.portfolio .options .option:nth-child(2) {
+  --defaultBackground:#FC6E51;
+}
+.portfolio .options .option:nth-child(3) {
+  --defaultBackground:#FFCE54;
+}
+.portfolio .options .option:nth-child(4) {
+  --defaultBackground:#2ECC71;
+}
+.portfolio .options .option:nth-child(5) {
+  --defaultBackground:#5D9CEC;
+}
+.portfolio .options .option:nth-child(6) {
+  --defaultBackground:#AC92EC;
+}
+.portfolio .options .option.active {
+  flex-grow: 10000;
+  transform: scale(1);
+  max-width: 600px;
+  margin: 0px;
+  border-radius: 40px;
+  background-size: auto 100%;
+  /*&:active {
+     transform:scale(0.9);
+  }*/
+}
+.portfolio .options .option.active .shadow {
+  box-shadow: inset 0 -120px 120px -120px black, inset 0 -120px 120px -100px black;
+}
+.portfolio .options .option.active .label {
+  bottom: 20px;
+  left: 20px;
+}
+.portfolio .options .option.active .label .info > div {
+  left: 0px;
+  opacity: 1;
+}
+.portfolio .options .option:not(.active) {
+  flex-grow: 1;
+  border-radius: 30px;
+}
+.portfolio .options .option:not(.active) .shadow {
+  bottom: -40px;
+  box-shadow: inset 0 -120px 0px -120px black, inset 0 -120px 0px -100px black;
+}
+.portfolio .options .option:not(.active) .label {
+  bottom: 10px;
+  left: 10px;
+}
+.portfolio .options .option:not(.active) .label .info > div {
+  left: 20px;
+  opacity: 0;
+}
+.portfolio .options .option .shadow {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 120px;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+.portfolio .options .option .label {
+  display: flex;
+  position: absolute;
+  right: 0px;
+  height: 40px;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+.portfolio .options .option .label .icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  max-width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: white;
+  color: var(--defaultBackground);
+}
+.portfolio .options .option .label .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+  color: white;
+  white-space: pre;
+}
+.portfolio .options .option .label .info > div {
+  position: relative;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
+}
+.portfolio .options .option .label .info .main {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.portfolio .options .option .label .info .sub {
+  transition-delay: .1s;
+}
+.flexme {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding-bottom:50px;
 }

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en" class="no-js animated fadeIn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700|IM+Fell+Double+Pica:400italic' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+  <link rel="stylesheet" href="css/animate.css">
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+	<title>Ben Knier | Portolio</title>
+
+</head>
+<body class="page_portfolio">
+<main id="swup" class="cd-main-content transition-fade">
+	<div class="center">
+		<div class="navbar navbar_portfolio">
+			<h1 class="homeh1 portfolio_h1">PORTFOLIO</h1>
+			<div class="hamburger">
+				<a href="#0" class="cd-btn cd-modal-trigger">
+					<span class="line"></span>
+					<span class="line"></span>
+					<span class="line"></span>
+				</a>
+			</div>
+		</div>
+
+
+		<div class="portfolio">
+		<div class="options">
+		   <div class="option active" style="--optionBackground:url(https://66.media.tumblr.com/6fb397d822f4f9f4596dff2085b18f2e/tumblr_nzsvb4p6xS1qho82wo1_1280.jpg);">
+		      <div class="shadow"></div>
+		      <div class="label">
+		         <div class="icon">
+		            <i class="fas fa-walking"></i>
+		         </div>
+		         <div class="info">
+		            <div class="main">Blonkisoaz</div>
+		            <div class="sub">Omuke trughte a otufta</div>
+		         </div>
+		      </div>
+		   </div>
+		   <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/8b69cdde47aa952e4176b4200052abf4/tumblr_o51p7mFFF21qho82wo1_1280.jpg);">
+		      <div class="shadow"></div>
+		      <div class="label">
+		         <div class="icon">
+		            <i class="fas fa-snowflake"></i>
+		         </div>
+		         <div class="info">
+		            <div class="main">Oretemauw</div>
+		            <div class="sub">Omuke trughte a otufta</div>
+		         </div>
+		      </div>
+		   </div>
+		   <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/5af3f8303456e376ceda1517553ba786/tumblr_o4986gakjh1qho82wo1_1280.jpg);">
+		      <div class="shadow"></div>
+		      <div class="label">
+		         <div class="icon">
+		            <i class="fas fa-tree"></i>
+		         </div>
+		         <div class="info">
+		            <div class="main">Iteresuselle</div>
+		            <div class="sub">Omuke trughte a otufta</div>
+		         </div>
+		      </div>
+		   </div>
+		   <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/5516a22e0cdacaa85311ec3f8fd1e9ef/tumblr_o45jwvdsL11qho82wo1_1280.jpg);">
+		      <div class="shadow"></div>
+		      <div class="label">
+		         <div class="icon">
+		            <i class="fas fa-tint"></i>
+		         </div>
+		         <div class="info">
+		            <div class="main">Idiefe</div>
+		            <div class="sub">Omuke trughte a otufta</div>
+		         </div>
+		      </div>
+		   </div>
+		   <div class="option" style="background-image:url(img/fdl_area_animal_shelter_scaled.jpg);">
+		      <div class="shadow"></div>
+		      <div class="label">
+		         <div class="icon">
+		            <i class="fas fa-sun"></i>
+		         </div>
+		         <div class="info">
+		            <div class="main">Inatethi</div>
+		            <div class="sub">Omuke trughte a otufta</div>
+		         </div>
+		      </div>
+		   </div>
+		</div>
+		</div>
+
+
+
+	</div>
+</main> <!-- .cd-main-content -->
+
+<div class="cd-modal">
+	<div class="modal-content">
+		<h1>MENU</h1>
+		<div class="primary-nav">
+			<a href="index.html" class="active">HOME</a>
+			<a href="portfolio.html">PORTFOLIO</a>
+			<a href="#">CONTACT</a>
+		</div>
+	</div> <!-- .modal-content-->
+
+	<a href="#0" class="modal-close">Close</a>
+</div> <!-- .cd-modal -->
+
+<div class="cd-transition-layer">
+	<div class="bg-layer"></div>
+</div> <!-- .cd-transition-layer --> -->
+
+
+
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>
